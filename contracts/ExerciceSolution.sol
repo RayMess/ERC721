@@ -145,7 +145,7 @@ contract ExerciceSolution is ERC721
 		Parent1[rang]=parent1;
 		Parent2[rang]=parent2;
 		indexToken[rang]=msg.sender;
-
+		_mint(msg.sender,rang);
 		Reproduce[parent1]=false;
 		Reproduce[parent2]=false;
 		delete authoBreed[parent2];
